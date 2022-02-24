@@ -1,0 +1,474 @@
+:root {
+  --main-color: RGB(23, 92, 133);
+  --secondary-color: RGB(177, 29, 29);
+  --third-color: RGB(250, 121, 40);
+  --white1: #fefefe;
+  --blacknav: #11101b;
+  --maintext: #5c5b5e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--maintext);
+}
+
+/* USEABLE ITEMS */
+
+/* HEADER */
+
+.header {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  align-items: center;
+  width: 100%;
+  height: 8rem;
+  background-color: var(--main-color);
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-contact a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--white1);
+  margin: 0 6rem;
+}
+
+.main-logo {
+  height: 4rem;
+  width: 12rem;
+}
+
+/* NAVIGATION */
+
+.hamburger {
+  display: none;
+}
+
+.nav-title {
+  border-bottom: var(--main-color) 2px solid;
+}
+
+.nav-title ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.nav-title ul li a {
+  display: block;
+  color: var(--blacknav);
+  font-size: 1.6rem;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  transition: 0.2s;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.nav-title ul li a:hover {
+  color: var(--white1);
+  background-color: var(--third-color);
+}
+
+.nav-title ul li a.nav-cta {
+  color: var(--white1);
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.nav-title ul li {
+  list-style: none;
+}
+
+/* HERO PAGE */
+
+.hero-section {
+  padding-top: 5rem;
+  padding-bottom: 9.6rem;
+}
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.hero-img_work {
+  width: 100%;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.hero-title {
+  font-size: 5rem;
+
+  letter-spacing: -0.1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.hero-sub {
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.hero {
+  display: block;
+  text-align: center;
+}
+
+.hero-btn {
+  text-align: center;
+
+  font-size: 1.6rem;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  transition: 0.2s;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--white1);
+  background-color: var(--secondary-color);
+}
+
+/* ABOUT-DETAILS */
+
+.about-section {
+  padding-bottom: 9.6rem;
+  border-bottom: var(--main-color) solid 0.01rem;
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about-text_detail {
+  font-size: 1.6rem;
+  line-height: 3.3rem;
+  padding-right: 7rem;
+}
+
+.about-name {
+  font-size: 1.8rem;
+}
+
+.about-img_work {
+  border-radius: 50%;
+  margin-left: 8rem;
+}
+
+/* WORK DEATILS */
+
+.work-details-section {
+  padding: 7.6rem 0;
+}
+
+.work-details_container {
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.work-detail-detail {
+  border: var(--main-color) solid 0.05rem;
+  padding: 2rem;
+  box-shadow: 2px 2px var(--main-color);
+  height: 100%;
+}
+
+.work-details-icon {
+  font-size: 4rem;
+}
+
+.work-details-title {
+  font-size: 1.8rem;
+  padding-top: 1rem;
+}
+
+.work-details-subtitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.work-details-text {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+}
+
+/* CUSTOMERS */
+
+.customers {
+  padding: 6.6rem 3rem 5rem 3rem;
+}
+
+.customer-title {
+  font-size: 3.8rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.customer-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 10%);
+  gap: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+.customer-logo {
+  height: 5rem;
+  width: 10rem;
+  object-fit: cover;
+}
+
+/* TESTIMONILS */
+
+.testimonials-section {
+  padding-bottom: 2.8rem;
+  border-bottom: var(--main-color) solid 0.01rem;
+}
+
+.testimonial-box {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 5rem 5rem 5rem;
+}
+
+.testimonial-title {
+  font-size: 2.2rem;
+  text-align: center;
+  padding-bottom: 3.8rem;
+}
+
+.testimonial-quote {
+  font-size: 1.4rem;
+}
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.testimonial-company {
+  font-size: 1.2rem;
+}
+
+.testimonial {
+  border: var(--main-color) solid 0.5px;
+  padding: 1rem;
+  border-radius: 0 2rem 0 2rem;
+  box-shadow: 2px 2px var(--main-color);
+}
+
+.testimonial-1,
+.testimonial-3,
+.testimonial-5 {
+  background-color: rgb(23, 92, 133);
+  color: var(--white1);
+}
+
+/* SERVICE SECTION */
+
+.services-section {
+  padding-bottom: 2.8rem 0;
+  border-bottom: var(--main-color) solid 0.01rem;
+}
+
+.service-title {
+  padding-top: 2.8rem;
+  font-size: 3.8rem;
+  text-align: center;
+  padding-bottom: 2.8rem;
+}
+
+.service-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6.8rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.service-card {
+  width: 20rem;
+  height: 30rem;
+  perspective: 1000px;
+  margin: 1rem;
+}
+
+.service-card-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  transition: 1s ease;
+  transform-style: preserve-3d;
+}
+
+.service-card:hover .service-card-container {
+  transform: rotateY(180deg);
+}
+
+.service-card-front,
+.service-card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1rem;
+  box-shadow: 3px 3px var(--maintext);
+}
+
+.service-card-front {
+  background-color: var(--main-color);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.service-card-back {
+  background-color: var(--third-color);
+  transform: rotateY(180deg);
+  color: var(--white1);
+  line-height: 1.5;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.service__icon {
+  fill: var(--white1);
+  height: 10rem;
+  width: 10rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.service__name {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--white1);
+  padding-top: 1rem;
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding-bottom: 2.8rem 0;
+  border-bottom: var(--main-color) solid 0.01rem;
+}
+
+/* CTA */
+
+.cta-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--main-color);
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+
+  padding: 5rem 15rem;
+}
+
+.footer-header {
+  color: var(--white1);
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+/* ADDRESS */
+
+.address-logo {
+  width: 9rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contacts {
+  font-size: 1.6rem;
+  color: var(--white1);
+  line-height: 1.7;
+}
+
+/* MEDIA */
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__icon {
+  height: 3rem;
+  width: 3rem;
+  fill: var(--white1);
+  padding-right: 1rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: var(--white1);
+  font-size: 1.6rem;
+  padding: 1.5rem 0;
+}
+
+/* COMPANY */
+.company-list {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: var(--white1);
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.footer-company ul li a {
+  text-decoration: none;
+  color: var(--white1);
+}
+
+.about-accreditation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 30rem;
+}
+
+.logo {
+  width: 12rem;
+  height: 5rem;
+  margin: 0 0.5rem;
+}
+
+.copyright {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  padding: 2rem 2rem;
+  font-weight: 700;
+}
